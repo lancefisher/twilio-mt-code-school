@@ -1,4 +1,7 @@
 {
     "root": true,
-    "extends": "airbnb/legacy"
+    "extends": "airbnb/legacy",
+    "rules": {
+        "vars-on-top": "off"
+    }
 }
