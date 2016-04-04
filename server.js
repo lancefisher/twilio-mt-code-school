@@ -3,6 +3,11 @@ var express = require('express');
 var config = require('./config');
 var app = express();
 
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
 if (process.env.NODE_ENV === 'production') {
   console.log('Running in production mode');
 } else {
